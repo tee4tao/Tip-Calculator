@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5307dcf8d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-center">
+        <section class="heading">
+          <h1>tip calculator</h1>
+        </section>
+        <section class="calculator-body">
+          <div class="error-display">
+            <div class="bill-error">bill amount cannot be blank</div>
+            <div class="share-error">
+              number of users must be greater than zero
+            </div>
+            <div class="service-error">you must select a service</div>
+          </div>
+          <form action="" class="tip-form">
+            <label for="amount">how much was your bill?</label>
+            <br />
+            <span
+              ><i class="fa-solid fa-dollar-sign dollar-icon"></i>
+              <input type="number" step="0.01" min="0" name="" id="amount"
+            /></span>
+            <br />
+            <label for="people-share">how many people sharing the bill?</label>
+            <br />
+            <span
+              ><i class="fa-solid fa-user user-icon"></i>
+              <input type="number" min="0" name="" id="people-share" />
+              <br
+            /></span>
+            <label for="tip-percent">how was your service</label>
+            <br />
+            <select name="" id="tip-percent">
+              <option value="">Choose...</option>
+              <option value="">Great - 20%</option>
+              <option value="">Good - 10%</option>
+              <option value="">Bad - 2%</option>
+            </select>
+            <br />
+            <button type="submit" class="submit-btn">Calculate</button>
+          </form>
+          <div class="preloader">
+            <img src="./loading-loading-forever.gif" alt="" />
+          </div>
+          <div class="total-result">
+            <h1 class="tip-amount">Tip Amount $2</h1>
+            <h1 class="total-amount">Tip Total $2</h1>
+            <h1 class="amount-owe">Each Person Owes $2</h1>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

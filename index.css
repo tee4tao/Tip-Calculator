@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: deepskyblue;
+}
+main {
+  display: grid;
+  place-items: center;
+  width: 90vw;
+  height: 100vh;
+}
+.section-center {
+  width: 38rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: white;
+}
+.heading h1 {
+  background-color: rgba(0, 0, 139, 0.336);
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  height: 3rem;
+}
+.tip-form {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.tip-form label {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.tip-form input {
+  height: 3rem;
+  width: 94%;
+  font-size: 1.2rem;
+}
+.tip-form select {
+  height: 3rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.tip-form select * {
+  font-size: 1.2rem;
+}
+.submit-btn {
+  height: 3rem;
+  display: inline-block;
+  width: 50%;
+  margin: 1rem 25%;
+  background-color: rgba(0, 0, 139, 0.336);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: rgba(0, 0, 139, 0.74);
+  transition: background-color, 0.5s linear;
+}
+.dollar-icon,
+.user-icon {
+  background-color: rgba(0, 0, 139, 0.336);
+  color: white;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 139, 0.336);
+  font-weight: bolder;
+}
+.error-display {
+  background-color: rgba(255, 0, 13, 0.26);
+  width: 95%;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  text-align: center;
+  display: none;
+}
+.error-display * {
+  text-transform: capitalize;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: none;
+}
+.total-result {
+  display: grid;
+  place-items: center;
+  display: none;
+}
+.total-result * {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.preloader {
+  display: none;
+  place-items: center;
+}
+.preloader.active {
+  display: grid;
+}
