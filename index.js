@@ -15,7 +15,7 @@ form.addEventListener(`submit`, function (e) {
   if (
     amount.value > 0 &&
     peopleShare.value > 0 &&
-    tipPercentOptions.selectedIndex == 1
+    tipPercentOptions.selectedIndex === 1
   ) {
     let tipAmountValue = (parseFloat(amount.value) * 20) / 100;
     let tipTotalValue = tipAmountValue + parseFloat(amount.value);
