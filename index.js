@@ -8,7 +8,7 @@ let errorDisplay = document.querySelector(`.error-display`);
 let billError = document.querySelector(`.bill-error`);
 let shareError = document.querySelector(`.share-error`);
 let serviceError = document.querySelector(`.service-error`);
-tipPercentOptions = tipPercent.options;
+let tipPercentOptions = tipPercent.options;
 
 form.addEventListener(`submit`, function (e) {
   e.preventDefault();
@@ -25,7 +25,7 @@ form.addEventListener(`submit`, function (e) {
     let amountOwe = document.querySelector(`.amount-owe`);
     let preloader = document.querySelector(`.preloader`);
     preloader.classList.add(`active`);
-    setTimeout(function () {
+    setTimeout(() => {
       tipAmount.textContent = `Tip Amount $${tipAmountValue}`;
       tipTotal.textContent = `Tip Total $${tipTotalValue}`;
       amountOwe.textContent = `Each Person Owes $${amountOweValue}`;
@@ -47,7 +47,7 @@ form.addEventListener(`submit`, function (e) {
     let amountOwe = document.querySelector(`.amount-owe`);
     let preloader = document.querySelector(`.preloader`);
     preloader.classList.add(`active`);
-    setTimeout(function () {
+    setTimeout(() => {
       tipAmount.textContent = `Tip Amount $${tipAmountValue}`;
       tipTotal.textContent = `Tip Total $${tipTotalValue}`;
       amountOwe.textContent = `Each Person Owes $${amountOweValue}`;
@@ -68,7 +68,7 @@ form.addEventListener(`submit`, function (e) {
     let amountOwe = document.querySelector(`.amount-owe`);
     let preloader = document.querySelector(`.preloader`);
     preloader.classList.add(`active`);
-    setTimeout(function () {
+    setTimeout(() => {
       tipAmount.textContent = `Tip Amount $${tipAmountValue}`;
       tipTotal.textContent = `Tip Total $${tipTotalValue}`;
       amountOwe.textContent = `Each Person Owes $${amountOweValue}`;
@@ -142,7 +142,7 @@ form.addEventListener(`submit`, function (e) {
     shareError.style.display = `none`;
     serviceError.style.display = `block`;
   }
-  setTimeout(function () {
+  setTimeout(() => {
     totalResult.style.display = `none`;
     errorDisplay.style.display = `none`;
     amount.value = ``;
