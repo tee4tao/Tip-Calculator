@@ -50,6 +50,12 @@ main {
   width: 94%;
   font-size: 1.2rem;
 }
+#tip-percent {
+  width: 90%;
+  /* margin-left: 2rem;
+  margin-right: 1rem; */
+  margin: 0 auto;
+}
 .tip-form select {
   height: 3rem;
   width: 100%;
@@ -132,7 +138,4 @@ main {
     /* height: 70%; */
     justify-content: space-between;
   }
-  /* .tip-form {
-    height: ;
-  } */
 }
