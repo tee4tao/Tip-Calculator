@@ -9,12 +9,19 @@ main {
   place-items: center;
   width: 90vw;
   height: 100vh;
+  margin: 0 auto;
 }
 .section-center {
-  width: 38rem;
+  /* width: 38rem; */
+  width: 90%;
+  margin: 2rem auto;
   overflow: hidden;
   border-radius: 1rem;
   background-color: white;
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 .heading h1 {
   background-color: rgba(0, 0, 139, 0.336);
@@ -24,7 +31,7 @@ main {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  height: 3rem;
+  /* height: 3rem; */
 }
 .tip-form {
   background-color: white;
@@ -106,4 +113,26 @@ main {
 }
 .preloader.active {
   display: grid;
+}
+.tester {
+  display: flex;
+  align-items: center;
+  /* width: 100vw; */
+  /* justify-content: space-between; */
+}
+.testee {
+  width: 100%;
+}
+.money-icon {
+  /* height: 3rem; */
+}
+@media screen and (min-width: 800px) {
+  .section-center {
+    width: 50%;
+    /* height: 70%; */
+    justify-content: space-between;
+  }
+  /* .tip-form {
+    height: ;
+  } */
 }
